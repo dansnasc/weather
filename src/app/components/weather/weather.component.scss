@@ -1,0 +1,70 @@
+.weather-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background: linear-gradient(to bottom, #4f79a7, #2c3e50);
+    height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .city-name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .current-weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .temperature {
+    font-size: 5rem;
+    font-weight: bold;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+  }
+  
+  .temp-details {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+  
+  .other-details {
+    margin-top: 20px;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .search-section {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .city-input {
+    width: 100%;
+  }
+  
+  .loading {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #ffeb3b;
+  }
+  
+  .error {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #f44336;
+  }
+  

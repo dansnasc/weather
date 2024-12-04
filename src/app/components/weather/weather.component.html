@@ -1,0 +1,36 @@
+<div class="weather-app">
+    <h1 class="city-name">{{ weatherData?.name || 'Digite uma cidade' }}</h1>
+  
+    <div class="current-weather">
+      <h2 class="temperature">{{ weatherData?.main.temp }}°</h2>
+      <p class="description">{{ weatherData?.weather[0].description }}</p>
+      <img
+  *ngIf="weatherData?.weather[0].icon"
+  [src]="'http://openweathermap.org/img/wn/' + weatherData.weather[0].icon + '@2x.png'"
+  alt="Ícone do Clima"
+/>
+    </div>
+  
+    <div class="temp-details">
+      <p>Máx.: {{ weatherData?.main.temp_max }}°</p>
+      <p>Mín.: {{ weatherData?.main.temp_min }}°</p>
+    </div>
+  
+    <div class="other-details">
+      <p>Umidade: {{ weatherData?.main.humidity }}%</p>
+      <p>Vento: {{ weatherData?.wind.speed }} km/h</p>
+    </div>
+  
+    <div class="search-section">
+      <mat-form-field appearance="outline" class="city-input">
+        <mat-label>Cidade</mat-label>
+        <input matInput [(ngModel)]="city" placeholder="Digite o nome da cidade" />
+      </mat-form-field>
+      <button mat-raised-button color="primary" (click)="searchWeather()">Buscar</button>
+    </div>
+  
+    <div *ngIf="loading" class="loading">Carregando...</div>
+  
+    <div *ngIf="error" class="error">{{ error }}</div>
+  </div>
+  
