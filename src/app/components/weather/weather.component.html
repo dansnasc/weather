@@ -14,6 +14,7 @@
       </button>
     </div>
   </div>
+  <div *ngIf="error" class="error">{{ error }}</div>
 
   <h1 class="city-name">{{ weatherData?.name}}</h1>
 
@@ -41,5 +42,5 @@
 
   <div *ngIf="loading" class="loading">Carregando...</div>
 
-  <div *ngIf="error" class="error">{{ error }}</div>
+  
 </div>

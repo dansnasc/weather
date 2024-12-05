@@ -24,7 +24,7 @@ import { WeatherService } from '../../services/weather.service';
 })
 export class WeatherComponent implements OnInit {
   @Output() cityChange = new EventEmitter<string>();
-  city = 'São Paulo';
+  city = 'Ribeirão Preto';
   weatherData: any;
   loading = false;
   error = '';
