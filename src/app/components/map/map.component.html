@@ -1,1 +1,5 @@
-<app-map [city]="city"></app-map>
+<app-map
+[lon]="weatherData.coord.lon"
+[lat]="weatherData.coord.lat"
+[city]="weatherData.name"
+></app-map>

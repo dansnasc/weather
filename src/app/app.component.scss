@@ -1,0 +1,41 @@
+.app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: #f0f0f0; 
+  }
+  
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1200px; 
+    background: rgb(238 245 249 / 24%);
+  }
+  
+  .weather {
+    flex: 1; 
+  }
+  
+  .map {
+    flex: 1; 
+    height: 400px; 
+  }
+  
+  @media (min-width: 768px) {
+    .content-wrapper {
+      flex-direction: row; 
+      align-items: center;
+    }
+
+    .map {
+       padding: 20px;
+      }
+
+  }
+  

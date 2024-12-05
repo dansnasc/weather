@@ -1,8 +1,6 @@
-
-<!-- <mat-toolbar color="primary">
-  <span>Weather App</span>
-</mat-toolbar> -->
-<div class="container">
-  <app-weather></app-weather>
-  <app-map></app-map>
+<div class="app-container">
+  <div class="content-wrapper">
+    <app-weather (cityChange)="updateCity($event)" class="weather"></app-weather>
+    <app-map [city]="selectedCity" class="map"></app-map>
+  </div>
 </div>

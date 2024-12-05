@@ -11,4 +11,9 @@ import { WeatherComponent } from './components/weather/weather.component';
 })
 export class AppComponent {
   title = 'weather-forecast';
+  selectedCity = 'São Paulo';
+
+  updateCity(city: string) {
+    this.selectedCity = city;
+  }
 }
