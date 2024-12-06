@@ -1,5 +1,8 @@
 # WeatherForecast
 
+![Uploading Screenshot 2024-12-06 at 07.10.06.png…]()
+
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.2.
 
 ## Development server
