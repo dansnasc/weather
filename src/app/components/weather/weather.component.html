@@ -19,7 +19,7 @@
   <h1 class="city-name">{{ weatherData?.name}}</h1>
 
   <div class="current-weather">
-    <h2 class="temperature">{{ weatherData?.main.temp }}°</h2>
+    <h2 class="temperature">{{ weatherData?.main.temp | number:'1.0-0' }}°</h2>
     <p class="description">{{ weatherData?.weather[0].description }}</p>
     <img
       *ngIf="weatherData?.weather[0].icon"
@@ -30,8 +30,8 @@
 
   <div class="temp-wrapper">
     <div class="temp-details">
-      <p>Máx.: {{ weatherData?.main.temp_max }}°</p>
-      <p>Mín.: {{ weatherData?.main.temp_min }}°</p>
+      <p>Máx.: {{ weatherData?.main.temp_max | number:'1.0-0' }}°</p>
+      <p>Mín.: {{ weatherData?.main.temp_min | number:'1.0-0' }}°</p>
     </div>
   
     <div class="other-details">
