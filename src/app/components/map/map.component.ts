@@ -35,7 +35,7 @@ export class MapComponent implements AfterViewInit, OnChanges {
 
   private async initializeMap() {
     const location = await this.geolocationService.getCoordinates(
-      this.city || 'London'
+      this.city || 'Ribeirão Preto'
     );
 
     this.map = L.map('map', {
