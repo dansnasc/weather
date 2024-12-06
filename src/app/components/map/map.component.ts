@@ -50,6 +50,8 @@ export class MapComponent implements AfterViewInit, OnChanges {
         '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     }).addTo(this.map);
 
+    this.addMarker(location.lat, location.lon, this.city || 'Ribeirão Preto');
+
     setTimeout(() => {
       this.map.invalidateSize();
     }, 100);
