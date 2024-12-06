@@ -1,6 +1,7 @@
 # WeatherForecast
 
-![Uploading Screenshot 2024-12-06 at 07.10.06.png…]()
+<img width="1269" alt="Weather Forecast App" src="https://github.com/user-attachments/assets/36b6236e-191f-4957-a6f7-3ab4da8de8d8">
+
 
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.2.
